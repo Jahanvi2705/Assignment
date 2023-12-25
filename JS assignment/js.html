@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1st Number:- <input type="number" id="num1">
+    <hr>
+    2nd Number:- <input type="number" id="num2">
+    <hr>
+    <button id="add">+</button>
+    <button id="sub">-</button>
+    <button id="mul">*</button>
+    <button id="div">/</button>
+    <button id="mod">%</button>
+    <hr>
+    Answer is:-  <input type="number" id="answer" readonly>
+    <script>
+        var n1 = document.getElementById("num1");
+        var n2 = document.getElementById("num2");
+        var result = document.getElementById("answer");
+        document.getElementById("add").addEventListener("click", function () {
+            result.value = parseInt(n1.value) + parseInt(n2.value);
+        });
+        document.getElementById("sub").addEventListener("click", function () {
+            result.value = parseInt(n1.value) - parseInt(n2.value);
+        });
+        document.getElementById("mul").addEventListener("click", function () {
+            result.value = parseInt(n1.value) * parseInt(n2.value);
+        }); 
+        document.getElementById("div").addEventListener("click", function () {
+            result.value = parseInt(n1.value) / parseInt(n2.value);
+        }); 
+        document.getElementById("mod").addEventListener("click", function () {
+            result.value = parseInt(n1.value) % parseInt(n2.value);
+        });
+    </script>
+</body>
+</html>

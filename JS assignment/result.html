@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Marksheet for Information Technology</h2>
+    C Language  <input type="text" id="c"><br><br>
+    C++ Language  <input type="text" id="c++"><br><br>
+    Database  <input type="text" id="data"><br><br>
+    HTML  <input type="text" id="html"><br><br>
+    CSS  <input type="text" id="css"><br><br>
+    PHP  <input type="text" id="php"><br><br>
+    Core Java  <input type="text" id="java"><br><br>
+    Total is:- <input type="text" id="result" readonly>/350<br><br>
+    Percentage is:- <input type="text" id="per" readonly><br><br>
+    <button id="sum">RESULT</button>
+    <script>
+        var s1=document.getElementById("c");
+        var s2=document.getElementById("c++");
+        var s3=document.getElementById("data");
+        var s4=document.getElementById("html");
+        var s5=document.getElementById("css");
+        var s6=document.getElementById("php");
+        var s7=document.getElementById("java");
+        // var p1=document.getElementById("persentage").value;
+        document.getElementById("sum").addEventListener("click", function () {
+            result.value = parseInt(s1.value) + parseInt(s2.value) + parseInt(s3.value)+ parseInt(s4.value)+ parseInt(s5.value)
+             + parseInt(s6.value)+ parseInt(s7.value);
+        });
+        document.getElementById("mod").addEventListener("click", function () {
+            result.value=(sum*100)/350+"%";});
+    </script>
+</body>
+</html>
